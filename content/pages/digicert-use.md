@@ -46,7 +46,7 @@ If you use JSign 4.0, you can skip this step.
 1. Log on to DigiCert ONE and select "Secure Software" from the menu in the top right-hand corner.
 1. Select "Resources" in the left-hand menu.
 1. Download and install the "Secure Software Manager Windows Clients Installer".
-1. As per the <a href="https://digicert.github.io/snowbird-doc/#/administration-guides/secure-software-manager/windows-configuration" target="_blank">Windows Configuration</a> section of the client user guide, create the four system environment variables. These **must** always be set to use the DigiCert signing service.
+1. As per the <a href="https://docs.digicert.com/en/digicert-one/software-trust-manager/general/secure-credentials/set-up-secure-credentials-for-windows.html" target="_blank">Windows Configuration</a> section of the client user guide, create the four system environment variables. These **must** always be set to use the DigiCert signing service.
 1. Test with `smctl.exe keypair ls`. You should see at least one certificate listed. (smctl.exe is installed as part of the DigiCert client and won't be on your path.)
 1. Test with `certutil.exe -csp "DigiCert Signing Manager KSP" -key -user`. You should see at least one key listed. (certutil.exe will be on your path.)
 1. Synchronise certificates with `smksp_cert_sync.exe`.
